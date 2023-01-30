@@ -31,12 +31,15 @@
   align-items: center;
 }
 
+.container h1{
+  margin: 10px 0;
+}
+
 .container .buttons {
   display: flex;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 30px 0;
 }
 
 .container button {
