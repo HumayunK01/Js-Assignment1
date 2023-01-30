@@ -13,6 +13,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+  text-decoration: none;
 }
 
 .hero {
@@ -38,7 +39,7 @@
   margin: 0 0 30px 0;
 }
 
-.container .buttons input {
+.container button {
   padding: 10px 20px;
   border: none;
   border-radius: 10px;
@@ -47,9 +48,23 @@
   transition: all ease 0.3s;
 }
 
-.container .buttons input:hover {
+.container button:hover {
   background-color: var(--color);
   color: var(--light);
+}
+
+.container button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--dark);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.container button span {
+  font-size: 15px;
 }
 
 .container .paragraph {
@@ -57,14 +72,13 @@
 }
 
 @media only screen and (max-width: 530px) {
-  .container .buttons{
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  .container .buttons {
+    justify-content: center;
   }
-  .container .buttons input{
+  .container button {
     margin: 10px;
   }
-  .container .paragraph{
+  .container .paragraph {
     margin: 0 20px;
     font-size: 15px;
   }
