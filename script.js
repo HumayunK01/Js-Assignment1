@@ -9,6 +9,6 @@ function light() {
 }
 
 function semi_dark() {
-  document.body.style.backgroundColor = "#414A4C";
+  document.body.style.backgroundColor = "#262a2f";
   document.body.style.color = "#ffffff";
 }
