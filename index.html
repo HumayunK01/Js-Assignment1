@@ -7,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
     <title>JS-Assignment 1</title>
 </head>
 
@@ -15,9 +14,13 @@
     <div class="hero">
         <div class="container">
             <div class="buttons">
-                <button onclick="dark()"><i class="ri-moon-line"></i><span>Dark</span></button>
-                <button onclick="semi_dark()"><i class="ri-sun-cloudy-line"></i><span>Semi-Dark</span></button>
-                <button onclick="light()"><i class="ri-sun-line"></i><span>Light</span></button>
+                <button onclick="document.body.style.backgroundColor = '#121212'; document.body.style.color = '#ffffff';"><i class="ri-moon-line"></i><span>Dark</span></button>
+               
+                <button onclick="document.body.style.backgroundColor = '#262a2f';
+                document.body.style.color = '#ffffff';"><i class="ri-sun-cloudy-line"></i><span>Semi-Dark</span></button>
+                
+                <button onclick="document.body.style.backgroundColor = '#ffffff';
+                document.body.style.color = '#121212';"><i class="ri-sun-line"></i><span>Light</span></button>
             </div>
             <h1>JS Assignment 1</h1>
             <div class="paragraph">
